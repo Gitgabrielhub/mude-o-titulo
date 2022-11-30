@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div>
+            <h1>personalize seu proprio texto</h1>
+
+            <input id="mudar" onchange="changeText()" type="text">
+        </div>
+
+        <script>
+            function changeText(){
+                let texto = document.getElementsByTagName("h1")[0]
+                let input = document.getElementById("mudar")
+                texto.innerText = input.value;
+            }
+        </script>
+    </body>    
+</html>
